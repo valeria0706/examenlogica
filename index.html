@@ -1,30 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Document</title>
 </head>
+
 <body>
-    <main class="container">
-        <form action="" class="formulario">
-            <h1> Sign In</h1>
-            <input type="text" name="nombre" id="nombre" placeholder="nombre">
-            <input type="password" name="password" placeholder="password">
-            <input type="checkbox">
-            <label for="">Remerber Me</label>
+    <section class="social_icon">
 
-            <button onclick="guardarInfo()" type="button">Login</button>
-        </form>
-    </main>
+        <div class="social-icon-container">
+            <i id="fab" class='bx bxl-facebook-square'></i>
+        </div>
 
-    <section>
+        <div class="social-icon-container">
+            <i id="goo" class='bx bxl-google-plus-circle'></i>
+        </div>
 
-        <button id="cambio" onclick="cambio()">cambiar estilos</button>
+        <div class="social-icon-container">
+            <i id="twi" class='bx bxl-twitter'></i>
+        </div>
 
     </section>
-    
+
+    <main class="container">
+
+        <form action="" class="formulario">
+
+            <h1> Sign In</h1>
+
+            <div class="input-box">
+                <input type="text" name="nombre" id="nombre" placeholder="nombre" required>
+                <i class='bx bxs-user'></i>
+                <div class="inner-container"></div>
+            </div>
+
+            <div class="input-box">
+                <input type="password" name="password" placeholder="password" required>
+                <i class='bx bxs-key'></i>
+                <div class="inner-container"></div>
+            </div>
+
+            <div class="Rememrber">
+                <input type="checkbox">
+                <label for="">Remerber Me</label>
+            </div>
+
+            <button class="btn" onclick="guardarInfo()" type="button">Login</button>
+
+            <div>
+                <p class="letrero">Don´t have an account <a href="#">Sign Up Forgot your password?</a></p>
+            </div>
+
+        </form>
+    </main>
+    <section>
+
+        <button class="cambio" id="cambio" onclick="cambio()">cambiar estilos</button>
+
+    </section>
+
     <script src="./js/script.js"></script>
 </body>
+
 </html>
