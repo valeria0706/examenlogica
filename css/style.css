@@ -24,6 +24,7 @@ body {
     color: white;
     border-radius: 5px;
     padding: 30px 40px;
+    display: none;
 }
 
 .social_icon {
